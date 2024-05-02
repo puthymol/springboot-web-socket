@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Order</title>
+    <style>
+        body {
+            padding: 20px 30vw;
+        }
+        form {
+            display: flex;
+            column-gap: 5px;
+        }
+        input {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <form id="orderForm">
+        <input type="text" id="orderInput" placeholder="Enter menu name to order" required>
+        <button type="submit">Send</button>
+    </form>
+    <div id="messageContainer"></div>
+</body>
+<script src="/order/script.js"></script>
+</html>
